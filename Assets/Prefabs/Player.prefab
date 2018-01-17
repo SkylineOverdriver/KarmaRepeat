@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4148818574358346}
+  - component: {fileID: 114483186984924358}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -39,3 +40,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114483186984924358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1401255336843808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717de4e2f359a8844b614aa99f6d7af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  karma: 0
+  trueKarma: 0
+  health: 0
+  maxHealth: 0
+  playerLifespan: 0
+  playerLifespanTickTime: 0.001
+  moveLeftKey: 97
+  moveRightKey: 275

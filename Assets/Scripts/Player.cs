@@ -19,7 +19,10 @@ public class Player : MonoBehaviour {
 	/**The tick in years which the player's life progresses*/
 	public float playerLifespanTickTime = 0.001f;
 
-	public KeyCode moveLeftKey = KeyCode.A;
+	/**The key code that makes the player move left*/
+	public KeyCode moveLeftKey = KeyCode.LeftArrow;
+	/**The key code that makes the player move right*/
+	public KeyCode moveRightKey = KeyCode.RightArrow;
 
 	// Use this for initialization
 	void Start () 
