@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	/**The player's karma, this is zero at start*/
-	public int karma = 0;
+	public int karma = 400;
 	/**The player's true karma, this is a measure of how consistent they are*/
 	public int trueKarma = 0;
 
