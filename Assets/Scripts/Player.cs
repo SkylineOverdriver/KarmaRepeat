@@ -72,6 +72,11 @@ public class Player : MonoBehaviour {
 	/**The key code that makes the player jump*/
 	public KeyCode moveJumpKey = KeyCode.Space;
 
+	/**Can the player jump?*/
+	public bool canJump = false;
+	/**Is the player currently jumping*/
+	public bool isJumping = false;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -82,6 +87,11 @@ public class Player : MonoBehaviour {
 	void Update () 
 	{
 		playerLifespan += playerLifespanTickTime;
+
+		if(Input.GetKeyDown(moveJumpKey))
+		{
+			isJumping = true;
+		}
 	}
 
 	//Called for every physics update (can be called twice or more per frame)
@@ -96,9 +106,35 @@ public class Player : MonoBehaviour {
 			playerRigidbody.AddForce(moveRightVector);
 		}
 
-		if(Input.GetKeyDown(moveJumpKey))
+		if(isJumping && canJump)
 		{
 			playerRigidbody.AddForce(jumpForceVector);
+			canJump = false;
+			isJumping = false;
+		}
+	}
+
+
+	//PROBLEM: Any side of the player can touch the ground (Collision check instead of trigger)
+	//SOLUTIONS:
+	//1. Make the player have a trigger underneath them
+	//2. Make the player check the surrounding area for the ground (more computation)
+	//3. Make the player use a physics calculation for jumping
+
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.CompareTag("Ground"))
+		{
+			canJump = true;
+		}
+	}
+
+	void OnTriggerExitr2D(Collider2D other)
+	{
+		if(other.CompareTag("Ground"))
+		{
+			canJump = false;
 		}
 	}
 }
