@@ -21,4 +21,16 @@ public class Trade : MonoBehaviour {
 	{
 		
 	}
+
+	/**All the abilities whih you can get from this trade*/
+	public List<TradeAbility> abilities;
+}
+
+[System.Serializable]
+public class TradeAbility
+{
+	/**Is this ability active*/
+	public bool active = false;
+	/**How much does this ability cost to activate*/
+	public int cost = 0;
 }
