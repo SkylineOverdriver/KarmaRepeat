@@ -22,6 +22,9 @@ public class Player : MonoBehaviour {
 	/**The tick in years which the player's life progresses*/
 	public float playerLifespanTickTime = 0.001f;
 
+	/**Is the player in their (or someone else's) inventory*/
+	public bool inInventory = false;
+
 	/**The rigidbody on the player*/
 	private Rigidbody2D playerRigidbody;
 
@@ -68,14 +71,16 @@ public class Player : MonoBehaviour {
 	/**The vector for jumping*/
 	public Vector2 jumpForceVector = new Vector2(0.0f, 200f);
 
-	/**The key code that makes the player move left*/
+	/**The key code that makes the player move left*
 	public KeyCode moveLeftKey = KeyCode.LeftArrow;
-	/**The key code that makes the player move right*/
+	/**The key code that makes the player move right*
 	public KeyCode moveRightKey = KeyCode.RightArrow;
-	/**The key code that makes the player jump*/
+	/**The key code that makes the player jump*
 	public KeyCode moveJumpKey = KeyCode.Space;
-	/**The key codes to make the player use items*/
+	/**The key codes to make the player use items*
 	public KeyCode[] itemSlotKeys = new KeyCode[7]{KeyCode.Z, KeyCode.X, KeyCode.C, KeyCode.V, KeyCode.B, KeyCode.N, KeyCode.M};
+	/**The key code to open an inventory*
+	public KeyCode inventoryKey = KeyCode.A;
 
 	/**Can the player jump?*/
 	public bool canJump = false;
@@ -93,7 +98,7 @@ public class Player : MonoBehaviour {
 	{
 		playerLifespan += playerLifespanTickTime;
 
-		if(Input.GetKeyDown(moveJumpKey))
+		if(Input.GetKeyDown(GameGlobals.moveJumpKey))
 		{
 			isJumping = true;
 		}
@@ -102,11 +107,11 @@ public class Player : MonoBehaviour {
 	//Called for every physics update (can be called twice or more per frame)
 	void FixedUpdate()
 	{
-		if(Input.GetKey(moveLeftKey))
+		if(Input.GetKey(GameGlobals.moveLeftKey))
 		{
 			playerRigidbody.AddForce(moveLeftVector);
 		}
-		else if(Input.GetKey(moveRightKey))
+		else if(Input.GetKey(GameGlobals.moveRightKey))
 		{
 			playerRigidbody.AddForce(moveRightVector);
 		}
