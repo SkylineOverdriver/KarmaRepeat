@@ -9,6 +9,9 @@ public class Player : MonoBehaviour {
 	/**The player's true karma, this is a measure of how consistent they are (Total between all runs)*/
 	public int trueKarma = 0;
 
+	/**How much money does the player have?*/
+	public int gold = 0;
+
 	/**The player's current health*/
 	public float health = 0;
 	/**The player's maximum health*/
