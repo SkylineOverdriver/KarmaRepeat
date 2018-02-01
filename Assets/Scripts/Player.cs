@@ -71,6 +71,8 @@ public class Player : MonoBehaviour {
 	public KeyCode moveRightKey = KeyCode.RightArrow;
 	/**The key code that makes the player jump*/
 	public KeyCode moveJumpKey = KeyCode.Space;
+	/**The key codes to make the player use items*/
+	public KeyCode[] itemSlotKeys = new KeyCode[7]{KeyCode.Z, KeyCode.X, KeyCode.C, KeyCode.V, KeyCode.B, KeyCode.N, KeyCode.M};
 
 	/**Can the player jump?*/
 	public bool canJump = false;

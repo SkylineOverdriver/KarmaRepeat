@@ -1191,9 +1191,10 @@ GameObject:
   - component: {fileID: 2147068989}
   - component: {fileID: 2147068988}
   - component: {fileID: 2147068990}
+  - component: {fileID: 2147068991}
   m_Layer: 0
   m_Name: Shop
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1280,3 +1281,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3.5}
   m_EdgeRadius: 0
+--- !u!114 &2147068991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2147068987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79526805d4e059f4eb7de55749e3a4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 5
+  drops: []
+  dropCount: 0

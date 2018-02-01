@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GroundDetector
   - Ground
+  - Destructable
   layers:
   - Default
   - TransparentFX
