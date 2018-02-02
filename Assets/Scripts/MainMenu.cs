@@ -18,8 +18,8 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	/**Makes the game jump to a scene*/
-	public void goToScene(int number)
+	public void goToScene(string name)
 	{
-		
+		SceneManager.LoadScene (name);
 	}
 }
