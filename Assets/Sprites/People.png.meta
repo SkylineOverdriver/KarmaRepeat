@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cf18ab044d1b64832bd510b748bd6649
-timeCreated: 1517589082
+timeCreated: 1517679063
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -85,10 +85,10 @@ TextureImporter:
       name: People_0
       rect:
         serializedVersion: 2
-        x: 1514
-        y: 0
-        width: 145
-        height: 725
+        x: 679
+        y: 810
+        width: 144
+        height: 232
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

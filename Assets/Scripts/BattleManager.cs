@@ -18,6 +18,8 @@ public class BattleManager : MonoBehaviour
 
 	/**Text for battle log*/
 	public Text battleLogText;
+	/**The UI screen which blacks out the rest of the screen*/
+	public GameObject blackoutUIScreen;
 
 	/**Who's turn is it?*/
 	public bool playerTurn = true;
@@ -27,7 +29,7 @@ public class BattleManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		GameGlobals.globals.level.battleManager = this;
 	}
 	
 	// Update is called once per frame
@@ -136,6 +138,7 @@ public class BattleManager : MonoBehaviour
 	{
 		enemy = enemyTarget;
 		inBattle = true;
+		blackoutUIScreen.SetActive(true);
 	}
 
 	/**Called when the battle ends*/
@@ -163,9 +166,22 @@ public class BattleManager : MonoBehaviour
 		//Other two buttons are always enabled
 	}
 
+	/**When should the messages start claring*/
+	private int battleMessageMax = 6;
+	/**The battle messages to display*/
+	private List<string> battleMessages = new List<string>();
+
 	/**Adds a message to the battle output box*/
 	public void logBattleMessage(string message)
 	{
-		battleLogText.text += "\n" + message;
+		
+		battleMessages.Add(message);
+
+		if(battleMessages.Count > battleMessageMax)
+			battleMessages.RemoveAt(0);
+
+		battleLogText.text = "";
+		foreach(string s in battleMessages)
+			battleLogText.text += s + "\n";
 	}
 }
