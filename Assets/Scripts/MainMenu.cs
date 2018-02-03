@@ -20,10 +20,8 @@ public class MainMenu : MonoBehaviour {
 	/**Makes the game jump to a scene*/
 	public void goToScene(string name)
 	{
-<<<<<<< HEAD
 		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 		SceneManager.LoadSceneAsync(name);
-
 	}
 		
 	/**Exits the game*/
@@ -34,8 +32,6 @@ public class MainMenu : MonoBehaviour {
 		#else
 			Application.Quit();
 		#endif
-=======
-		SceneManager.LoadScene (name);
->>>>>>> origin/master
+		SceneManager.LoadScene(name);
 	}
 }
