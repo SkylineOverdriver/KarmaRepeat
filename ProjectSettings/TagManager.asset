@@ -9,6 +9,7 @@ TagManager:
   - Destructable
   - LevelManager
   - ItemManager
+  - BattleManager
   layers:
   - Default
   - TransparentFX

@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryTrade : MonoBehaviour {
+public class InventoryTrade : MonoBehaviour 
+{
+	/**The buy shop slots*/
+	public ShopItemSlot[] buySlots = new ShopItemSlot[5];
+	/**The sell shop slots*/
+	public ShopItemSlot[] sellSlots = new ShopItemSlot[3];
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

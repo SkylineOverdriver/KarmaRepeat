@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : CharacterEntity {
 
@@ -80,8 +81,9 @@ public class Player : CharacterEntity {
 	public bool isJumping = false;
 
 	// Use this for initialization
-	void Start () 
+	public override void Start () 
 	{
+		base.Start();
 		playerRigidbody = GetComponent<Rigidbody2D>();
 	}
 	

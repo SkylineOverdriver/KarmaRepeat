@@ -31,4 +31,10 @@ public class ItemManager : MonoBehaviour {
 		else //Return the default item
 			return items[0];
 	}
+
+	/**Returns the default item*/
+	public Item getDefaultItem()
+	{
+		return items[0];
+	}
 }

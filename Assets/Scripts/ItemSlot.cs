@@ -10,7 +10,10 @@ public class ItemSlot : MonoBehaviour
 	/**Return the item in the slot*/
 	public virtual Item getItem()
 	{
-		return item;
+		if(item != null)
+			return item;
+		else
+			return GameGlobals.globals.itemManager.getDefaultItem();
 	}
 
 	/**Sets the item in the slot*/

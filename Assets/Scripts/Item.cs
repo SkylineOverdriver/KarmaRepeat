@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour 
 {
 	/**How much is this item worth*/
-	public int itemValue = 0;
+	public long itemValue = 0;
 	/**The item's sprite*/
 	public Sprite itemSprite;
 
@@ -15,6 +15,9 @@ public class Item : MonoBehaviour
 	public float healing = 0;
 	/**How much defense does this item add to the player*/
 	public  float defense = 0;
+
+	/**The type of item that this is*/
+	public ItemType itemType = ItemType.GENERIC;
 
 	/**Returns true if this item was successful in being used*/
 	public virtual bool itemUse()
@@ -45,4 +48,28 @@ public class Item : MonoBehaviour
 	{
 		return this.gameObject.name;
 	}
+
+	/**Return the type of item*/
+	public ItemType getItemType()
+	{
+		return itemType;
+	}
+
+	/**Returns the cost of the item (in gold)*/
+	public long getGoldValue()
+	{
+		return itemValue;
+	}
 }
+
+public enum ItemType : int
+{
+	GENERIC = -1,
+	WEAPON_GENERIC = 0,
+	HEALING = 1,
+	QUEST = 2,
+	WEAPON_MELE = 3,
+	WEAPON_MAGIC = 4,
+	WEAPON_RANGED = 5,
+	POTION = 6,
+};
