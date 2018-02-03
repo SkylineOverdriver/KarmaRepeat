@@ -115,6 +115,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &26627
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +184,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26627}
+=======
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 =======
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 --- !u!1 &1559749
@@ -474,6 +477,7 @@ GameObject:
   - component: {fileID: 127679632}
   m_Layer: 5
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: Item Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,6 +557,9 @@ GameObject:
 =======
   m_Name: Toolbar Slot
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
+=======
+  m_Name: Toolbar Slot
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,10 +613,14 @@ MonoBehaviour:
   m_FillOrigin: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!222 &140457218
 =======
 --- !u!222 &101079421
 >>>>>>> origin/master
+=======
+--- !u!222 &127679633
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 =======
 --- !u!222 &127679633
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
@@ -619,10 +630,14 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 140457215}
 =======
   m_GameObject: {fileID: 101079418}
 >>>>>>> origin/master
+=======
+  m_GameObject: {fileID: 127679630}
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 =======
   m_GameObject: {fileID: 127679630}
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
@@ -2041,6 +2056,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1404043449}
 --- !u!1 &1428135238
+<<<<<<< HEAD
 =======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2088,6 +2104,9 @@ Behaviour:
   m_Enabled: 1
 --- !u!20 &655238333
 Camera:
+=======
+GameObject:
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2464,6 +2483,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1616183638}
 --- !u!1 &1643089180
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2532,6 +2552,8 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643089180}
 --- !u!1 &1801700841
+=======
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2700,6 +2722,68 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_GameObject: {fileID: 1738557828}
+--- !u!1 &1746286623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1746286624}
+  - component: {fileID: 1746286626}
+  - component: {fileID: 1746286625}
+  m_Layer: 5
+  m_Name: Trade Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1746286624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746286623}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1404043450}
+  - {fileID: 303281485}
+  - {fileID: 91078491}
+  - {fileID: 935397887}
+  - {fileID: 1832362678}
+  - {fileID: 127679631}
+  - {fileID: 907571873}
+  m_Father: {fileID: 215778778}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1746286625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746286623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3271a1dd7312ac9418bc34f1da2542da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1746286626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
   m_GameObject: {fileID: 1746286623}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2797,6 +2881,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
   m_GameObject: {fileID: 1832362677}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1836302989
 GameObject:
@@ -3001,6 +3086,8 @@ CanvasRenderer:
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
+=======
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 --- !u!1 &1887897868
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3142,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1904824833
@@ -3126,6 +3214,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904824833}
+=======
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 =======
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 --- !u!1 &1960670912
@@ -3344,7 +3434,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 --- !u!1 &1979536941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3506,9 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1979536941}
+<<<<<<< HEAD
+>>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
+=======
 >>>>>>> parent of 1bd3cbe... Added More Shop UI Updates
 --- !u!1 &2073516850
 =======
