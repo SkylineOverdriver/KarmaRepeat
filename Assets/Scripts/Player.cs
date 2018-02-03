@@ -2,20 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player : CharacterEntity {
 
 	/**The player's karma, this is 150 at start*/
 	public int karma = 150;
 	/**The player's true karma, this is a measure of how consistent they are (Total between all runs)*/
 	public int trueKarma = 0;
-
-	/**How much money does the player have?*/
-	public int gold = 0;
-
-	/**The player's current health*/
-	public float health = 0;
-	/**The player's maximum health*/
-	public float maxHealth = 0;
 
 	/**The player's age (in years)*/
 	public float playerLifespan = 0;
@@ -107,20 +99,23 @@ public class Player : MonoBehaviour {
 	//Called for every physics update (can be called twice or more per frame)
 	void FixedUpdate()
 	{
-		if(Input.GetKey(GameGlobals.moveLeftKey))
+		if(!inInventory)
 		{
-			playerRigidbody.AddForce(moveLeftVector);
-		}
-		else if(Input.GetKey(GameGlobals.moveRightKey))
-		{
-			playerRigidbody.AddForce(moveRightVector);
-		}
+			if(Input.GetKey(GameGlobals.moveLeftKey))
+			{
+				playerRigidbody.AddForce(moveLeftVector);
+			}
+			else if(Input.GetKey(GameGlobals.moveRightKey))
+			{
+				playerRigidbody.AddForce(moveRightVector);
+			}
 
-		if(isJumping && canJump)
-		{
-			playerRigidbody.AddForce(jumpForceVector);
-			canJump = false;
-			isJumping = false;
+			if(isJumping && canJump)
+			{
+				playerRigidbody.AddForce(jumpForceVector);
+				canJump = false;
+				isJumping = false;
+			}
 		}
 	}
 

@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Destructable
   - LevelManager
+  - ItemManager
   layers:
   - Default
   - TransparentFX

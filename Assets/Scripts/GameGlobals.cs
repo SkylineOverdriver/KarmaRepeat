@@ -25,6 +25,8 @@ public class GameGlobals : MonoBehaviour
 
 	/**The current level manager which is loaded*/
 	public LevelManager level;
+	/**The items which are useable in the game*/
+	public ItemManager itemManager;
 
 	public void Start()
 	{
@@ -35,6 +37,11 @@ public class GameGlobals : MonoBehaviour
 			//Keep this object throughout the entire game
 			DontDestroyOnLoad(this.gameObject);
 			globals = this;
+			//Find the item manager
+			if(itemManager == null)
+			{
+				itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
+			}
 		}
 		else
 		{
@@ -71,8 +78,12 @@ public class GameGlobals : MonoBehaviour
 	/**Sets the current level manager*/
 	public void setLevelManager(LevelManager manager)
 	{
-		if(level.Equals(manager))
-			Debug.LogWarning("Tried to set new level manager to itsself!");
 		level = manager;
+	}
+
+	/**Sets the item manager*/
+	public void setItemManager(ItemManager manager)
+	{
+		itemManager = manager;
 	}
 }
