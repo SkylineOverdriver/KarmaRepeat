@@ -20,6 +20,18 @@ public class MainMenu : MonoBehaviour {
 	/**Makes the game jump to a scene*/
 	public void goToScene(string name)
 	{
-		SceneManager.LoadScene (name);
+		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+		SceneManager.LoadSceneAsync(name);
+	}
+		
+	/**Exits the game*/
+	public void exitGame()
+	{
+		#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+		#else
+			Application.Quit();
+		#endif
+		SceneManager.LoadScene(name);
 	}
 }

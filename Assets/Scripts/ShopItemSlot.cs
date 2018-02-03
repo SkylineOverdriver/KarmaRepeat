@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryToolbar : Inventory 
-{
-	/**The selected itemslot*/
-	public ItemSlot selectedSlot;
+public class ShopItemSlot : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,9 +10,7 @@ public class InventoryToolbar : Inventory
 	}
 	
 	// Update is called once per frame
-	void Update () 
-	{
+	void Update () {
 		
 	}
-		
 }

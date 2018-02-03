@@ -2,20 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryToolbar : Inventory 
+public class MultiItemSlot : ItemSlot 
 {
-	/**The selected itemslot*/
-	public ItemSlot selectedSlot;
-
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () 
-	{
+	void Update () {
 		
 	}
-		
 }
