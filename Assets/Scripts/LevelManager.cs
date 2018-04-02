@@ -11,9 +11,13 @@ public class LevelManager : MonoBehaviour {
 	/**How many years of time does this level last*/
 	public double levelYearCount = 0;
 
+	/**The battle manager (Used for managing each battle)*/
+	public BattleManager battleManager;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		GameGlobals.globals.setLevelManager(this);
 	}
 	
 	// Update is called once per frame

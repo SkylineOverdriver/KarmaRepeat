@@ -135,6 +135,14 @@ public class Player : CharacterEntity {
 		{
 			canJump = true;
 		}
+
+		if(other.CompareTag("Enemy"))
+		{
+			if(Input.GetKeyDown(KeyCode.E))
+			{
+				GameGlobals.globals.level.battleManager.beginBattle(other.GetComponent<NPCEntity>());
+			}
+		}
 	}
 
 	void OnTriggerExitr2D(Collider2D other)
